@@ -1,0 +1,9 @@
+{% extends "base.html"  %}
+{% block content %}
+    {% for movie in object_list %}
+        <tr>
+            <td>{{ movie.name }}</td><td><a href="/videos/?movie={{ movie.id }}">LINK</a> </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}
